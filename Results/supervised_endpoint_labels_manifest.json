@@ -1,0 +1,40 @@
+{
+  "created_at_utc": "2026-08-31T22:33:54.839487+00:00",
+  "source_repository": "https://github.com/Zesearch/HALP",
+  "source_directory": "FInal_CSV_Hallucination",
+  "models": {
+    "smolvlm2": {
+      "status": "CACHED",
+      "path": "/content/drive/MyDrive/HALP_Bench_Project/supervised_endpoint_sources/smolvlm_manually_reviewed.csv",
+      "sha256": "f69c25dc155aa676ba6bc1d686711330aacc5037dc21b7542fe9a88832ab3b18",
+      "source_url": "https://raw.githubusercontent.com/Zesearch/HALP/main/FInal_CSV_Hallucination/smolvlm_manually_reviewed.csv",
+      "reviewed_label_column": "is_hallucinating",
+      "reviewed_label_column_selection": "explicit_model_contract",
+      "manual_column_disagreement_rate": 0.0,
+      "canonical_label_added_locally": false,
+      "rows": 10000,
+      "labeled_rows": 10000,
+      "label_counts": {
+        "0": 9009,
+        "1": 991
+      }
+    },
+    "qwen25vl": {
+      "status": "CACHED",
+      "path": "/content/drive/MyDrive/HALP_Bench_Project/supervised_endpoint_sources/qwen25vl_manually_reviewed.csv",
+      "sha256": "96a548403eee0e432ca3b29a26c421eeb1d3d68b1d87dc1a7b8e9bb03fade7fa",
+      "source_url": "https://raw.githubusercontent.com/Zesearch/HALP/main/FInal_CSV_Hallucination/qwen25vl_manually_reviewed.csv",
+      "reviewed_label_column": "is_hallucinating",
+      "reviewed_label_column_selection": "explicit_model_contract",
+      "manual_column_disagreement_rate": 0.8025,
+      "canonical_label_added_locally": false,
+      "rows": 10000,
+      "labeled_rows": 10000,
+      "label_counts": {
+        "0": 1369,
+        "1": 8631
+      }
+    }
+  },
+  "bundle": "/content/drive/MyDrive/HALP_Bench_Project/final_artifacts/supervised_endpoint_labels.zip"
+}

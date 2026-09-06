@@ -1,0 +1,38 @@
+{
+  "archive_type": "research_artifact_snapshot",
+  "self_contained_project": false,
+  "included_run_artifacts": true,
+  "feature_h5_inclusion_enabled": false,
+  "omitted_large_artifacts": [
+    {
+      "path": "features/qwen25vl_representations.h5",
+      "size_bytes": 351267648,
+      "reason": "Large feature store required for probe reruns; intentionally omitted from browser snapshot unless explicitly enabled.",
+      "how_to_include": "Set INCLUDE_FEATURE_H5_IN_ARCHIVE = True before running this final cell."
+    },
+    {
+      "path": "features/smolvlm2_representations.h5",
+      "size_bytes": 363557696,
+      "reason": "Large feature store required for probe reruns; intentionally omitted from browser snapshot unless explicitly enabled.",
+      "how_to_include": "Set INCLUDE_FEATURE_H5_IN_ARCHIVE = True before running this final cell."
+    }
+  ],
+  "excluded_model_weight_suffixes": [
+    ".safetensors",
+    ".bin",
+    ".pt",
+    ".pth",
+    ".ckpt",
+    ".onnx"
+  ],
+  "excluded_raw_dataset_image_suffixes": [
+    ".jpg",
+    ".jpeg",
+    ".png",
+    ".webp",
+    ".bmp",
+    ".tif",
+    ".tiff"
+  ],
+  "note": "Use the full dataset, model weights, and feature stores from the configured Drive paths for a true rerun; this ZIP is not a complete benchmark release."
+}
